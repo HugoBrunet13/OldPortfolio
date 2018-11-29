@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="../../style/style.css" >
+
+		<title> Bitcoin </title>			
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a  href="../../index.html">Home</a></li>
+					<li class="active"><a href="../index.html">Bitcoin explorer</a></li>
+					<li><a href="../../token.html">Token ERC#20</a></li>
+					<li><a href="../../blockizor/index.html">PoE Copy Validation</a></li>
+				</ul>
+			</div>
+		</nav>
+	
+		<h1>Address</h1>
+
+		<div class="container">
+			<div class="row">
+		        <div class="col-sm-6 col-sm-offset-3">
+		            <div id="imaginary_container"> 
+		                <div class="input-group stylish-input-group">
+		                    <input type="text" id="idBlock" class="form-control" placeholder="Valid Bitcoin block ID">
+		                    <span class="input-group-addon">
+		                        <button type="submit" id="BoutonRechercheBLock">
+		                            <span class="glyphicon glyphicon-search"></span>
+		                        </button>  
+		                    </span>
+		                </div>
+		                <br>
+		                <div class="input-group stylish-input-group">
+		                    <input type="text" id="hashTx" class="form-control" placeholder="Valid Bitcoin transaction hash">
+		                    <span class="input-group-addon">
+		                        <button type="submit" id="BoutonRechercheTx">
+		                            <span class="glyphicon glyphicon-search"></span>
+		                        </button>  
+		                    </span>
+		                </div>
+		                <br>
+		                <div class="input-group stylish-input-group">
+		                    <input type="text" id="address" class="form-control" placeholder="Valid Bitcoin address" >
+		                    <span class="input-group-addon">
+		                        <button type="submit" id="BoutonRechercheAddress">
+		                            <span class="glyphicon glyphicon-search"></span>
+		                        </button>  
+		                    </span>
+		                </div>
+		            </div>
+		        </div>
+			</div>	
+        	<br>
+       
+        	<div id="errorAddress"></div>
+			<table class="table" id="tableAddress"> 
+				<tbody> 
+					<tr> 
+						<td>Address</td> 
+						<td><div id="ADR_address"></div></td> 
+					</tr>
+					<tr> 
+						<td>Number of transactions</td> 
+						<td><div id="ADR_n_tx"></div></td> 
+					</tr>
+					<tr> 
+						<td>Total received</td> 
+						<td><div id="ADR_total_received"></div></td> 
+					</tr>
+					<tr> 
+						<td>Total send</td> 
+						<td><div id="ADR_total_sent"></div></td> 
+					</tr>
+					<tr> 
+						<td>Final balance</td> 
+						<td><div id="ADR_final_balance"></div></td> 
+					</tr>
+					<tr> 
+					<td>Transactions</td>
+						<td><div id="listTx"></div></td> 
+					</tr>					
+				</tbody> 
+			</table>
+
+        </div> <!-- ./container -->
+
+		<footer><h3><i class="fa fa-btc" aria-hidden="true"></i></h3></footer>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../script.js"></script>
+		<script src="address.js"></script>
+	</body>
+</html>
